@@ -81,4 +81,52 @@ rosnode list
 rosnode ping my_turtle
 ```
 
-# /turtle1/pose 관찰
+# /turtle1/pose 관찰 (ROS Topics)
+1. Setup
+```bash
+roscore  # 1번만 실행
+rosrun turtlesim turtlesim_node # 새 터미널을 열어 터틀심 사용
+rosrun turtlesim turtle_teleop_key # 키보드로 터틀심 제어하는 명령어
+# 거북이가 움직이지 않는다면 turtle_teleop_key의 터미널 창에서 입력한 것이 맞는지 확인
+## /turtle1/pose 필드 분석
+- x: 거북이의 X 좌표. 앞으로 이동하면 값이 증가한다
+
+- y: 거북이의 Y 좌표. 위로 이동하면 값이 증가한다
+
+- theta: 거북이의 방향 좌회전하면 값이 증가, 우회전하면 감소한다
+
+- linear_velocity: 현재 직진 속도. 방향키 위를 누르면 2.0이 된다
+
+- angular_velocity: 현재 회전 속도. 방향키 좌를 누르면 2.0이 된다
+
+```
+
+2. ROS Topics
+- Using rqt_graph 
+```bash
+sudo apt-get install ros-noetic-rqt #rqt그래프 패키지 설치
+sudo apt-get install ros-noetic-rqt-common-plugins
+# In a new terminal: (안해도 된다.)
+rosrun rqt_graph rqt_graph # 그래프 실행
+```
+
+- Introducing rostopic
+```bash
+rostopic -h  # 도움말 옵션 / 하위 명령어 확인
+rostopic 
+```
+
+- Using rostopic echo
+```bash
+rostopic echo [topic]
+rostopic echo /turtle1/cmd_vel
+rostopic echo /turtle1/command_velocity
+# 해당 토픽에 데이터가 게시되지 않으므로 아무것도 안 나옴. 화살표 키를 눌러 turtle_teleop_key가 데이터를 게시하고 거북이가 움직이지 않으면 turtle_teleop_key 터미널을 다시 선택
+
+```
+
+- Using rostopic list
+```bash
+rostopic list -h #현재 구독 중이거나 게시 중인 모든 토픽 목록의 도움말
+rostopic list -v
+```
