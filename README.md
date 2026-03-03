@@ -45,3 +45,50 @@ source devel/setup.bash
 ```bash
 echo $ROS_PACKAGE_PATH
 ```
+
+# ROS packages
+1. Building Packages
+```bash
+source /opt/ros/kinetic/setup.bash
+catkin_make [make_targets] [-DCMAKE_VARIABLES=...]
+mkdir build
+cd build
+cmake ..
+make
+make install 
+catkin_make
+catkin_make install
+```
+
+2. Building Your Package
+```bash
+cd ~/catkin_ws/
+ls src
+catkin_make
+ls
+```
+
+# Understanding ROS Nodes
+1. Prerequisites
+```bash
+sudo apt-get install ros-noetic-ros-tutorials
+```
+2. roscore
+```bash
+roscore
+sudo chown -R <your_username> ~/.ros
+```
+3. Using rosnode
+```bash
+rosnode list
+rosnode info /rosout
+```
+4. Using rosrun
+```bash
+rosrun turtlesim turtlesim_node
+```
+In a new terminal:
+```bash
+rosnode list
+rosnode ping my_turtle
+```
