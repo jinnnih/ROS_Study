@@ -10,17 +10,13 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 
 2. Setup your sources.list
 ```bash
-sudo apt install curl # if you haven't already installed curl
-```
-```bash
+sudo apt install curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
 3. Installation
 ```bash
 sudo apt update
-```
-```bash
 sudo apt install ros-noetic-desktop-full
 ```
 
@@ -32,17 +28,9 @@ source /opt/ros/noetic/setup.bash
 5. Create a ROS Workspace
 ```bash
 mkdir -p ~/catkin_ws/src
-```
-```bash
 cd ~/catkin_ws/
-```
-```bash
 catkin_make
-```
-```bash
 source devel/setup.bash
-```
-```bash
 echo $ROS_PACKAGE_PATH
 ```
 
@@ -92,3 +80,5 @@ In a new terminal:
 rosnode list
 rosnode ping my_turtle
 ```
+
+# /turtle1/pose 관찰
