@@ -190,3 +190,39 @@ rosmsg show geometry_msgs/Twist # 출력 : geometry_msgs/Vector3 linear ...
 - b: 파랑 (0~255)
 ```
 
+
+# 과제 4: rostopic pub으로 정사각형 그리기
+```bash
+1. turtlesim 실행 (roscore, turtlesim_node가 이미 실행 중이어야 함)
+
+2. 직진 (2초간 전진)
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- \
+
+  '[2.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+
+3. 90도 회전 (angular.z = 1.5708은 약 π/2 라디안)
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- \
+
+  '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5708]'
+
+4. 위 2~3을 4번 반복하면 정사각형!
+```
+
+# 시도한 명령어와 결과
+```bash
+1. 명령어 : 
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- \
+>  '[2.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+
+결과 : 앞으로 전진한다 
+publishing and latching message for 3.0 seconds
+
+2. 명령어 : 
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- \
+>  '[0.0, 0.0, 0.0]' '[0.0, 0.0, 1.5708]'
+
+결과 : 거북이 90도 회전
+publishing and latching message for 3.0 seconds
+
+# 이것을 전진-회전-전진-회전-전진-회전-전진을 반복한다.
+
