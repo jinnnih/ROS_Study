@@ -225,4 +225,21 @@ rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- \
 publishing and latching message for 3.0 seconds
 
 # 이것을 전진-회전-전진-회전-전진-회전-전진을 반복한다.
+```
 
+# 과제 5: turtlesim 2개 동시 실행
+```bash
+- 터미널 1 : 
+roscore
+
+- 터미널 2 :
+rosrun turtlesim turtlesim_node
+
+- 터미널 3 : 
+rosrun turtlesim turtlesim_node __name:=my_turtle
+
+- 터미널 4 :
+rostopic info /turtle1/cmd_vel
+
+결과 : 두개의 창 모두 거북이 작동 성공 
+```
