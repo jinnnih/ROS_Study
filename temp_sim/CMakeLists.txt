@@ -161,6 +161,7 @@ include_directories(
 catkin_install_python(PROGRAMS
   scripts/temp_publisher.py
   scripts/temp_subscriber.py
+  scripts/turtle_circle.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
