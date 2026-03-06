@@ -2,43 +2,23 @@
 # Day 4 정리
 
 ## ROS Action
-### 1. ROS Action이란
+### ROS Action이란
 ```bash
-ROS Action은 **시간이 오래 걸리는 작업을 처리하기 위한 통신 방식**이다.
-
-예를 들어
-
-- 로봇이 목적지까지 이동
-- 물체를 집는 작업
-- 긴 계산 작업
-
-같이 오래 걸리는 작업을 수행할 때 사용한다.
+시간이 오래 걸리는 작업을 처리하기 위한 통신 방식이다.
 ```
+### Action의 특징
 ```bash
-Action은 다음과 같은 특징이 있다.
-
 - 작업 진행 상태를 확인할 수 있다 (Feedback)
 - 작업을 취소할 수 있다 (Cancel)
 - 작업이 완료되면 결과를 받을 수 있다 (Result)
 ```
 ---
-
-### 2. Topic / Service / Action 차이
-```bash
-| 통신 방식 | 특징 |
-|---|---|
-| Topic | 지속적인 데이터 전달 |
-| Service | 요청 → 응답 구조 |
-| Action | 시간이 오래 걸리는 작업 처리 |
-```
----
-
-### 3. Action 구조
+### Action 구조
 ```bash
 Action은 다음과 같은 구조로 이루어져 있다.
 Client
 │
-│ Goal 요청
+│ Goal 목표
 ▼
 Server
 │
@@ -46,28 +26,53 @@ Server
 │
 ▼
 Result (완료 결과)
-
-구성 요소
-- Goal : 클라이언트가 요청하는 작업
-- Feedback : 작업 진행 상태
-- Result : 작업 완료 후 결과
 ```
 ---
+### Action 환경설정
+## 1. package.xml 수정(아래 내용 추가)
+```bash
+<build_depend>actionlib</build_depend>
+<build_depend>actionlib_msgs</build_depend>
+<exec_depend>actionlib</exec_depend>
+<exec_depend>actionlib_msgs</exec_depend>
+```
+## 2. CMakeLists.txt 수정(아래 내용 추가)
+```bash
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  message_generation
+  actionlib              # 추가
+  actionlib_msgs         # 추가
+)
+
+add_action_files(
+  FILES
+  Timer.action
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  actionlib_msgs         # 추가
+)
+
+catkin_package(
+  CATKIN_DEPENDS actionlib_msgs   # 추가
+)
+```
+- action 디렉토리 생성
+```bash
+cd ~/catkin_ws/beginner_tutorials
+mkdir action
+```
 
 ## TimeServer
 
 ### 1. TimerServer란
 ```bash
-TimerServer는 **Action 서버 예제 노드**이다.
-
-클라이언트로부터 **시간(duration)** 을 받아서  
-해당 시간이 지나면 작업을 완료했다고 알려주는 기능을 한다.
-
-즉
-
-> "지정된 시간 동안 타이머를 실행하는 서버"
-
-이다.
+Action 서버 예제 노드, 지정된 시간 동안 타이머를 실행하는 서버
 ```
 ---
 
@@ -88,15 +93,45 @@ Result 반환
 ```
 ---
 
-### 3. TimerServer의 사용 목적
+## Timer.action 작성
+- Timer.action
+- 환경설정 적용
 ```bash
-이 예제는 다음을 이해하기 위해 사용된다.
-
-- ROS Action 구조
-- Action Server / Client 통신
-- 장시간 작업 처리 방식
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
 ```
----
+- 생성된 메시지 확인
+```bash
+rosmsg list | grep Timer
+```
+
+## timer_server.py, timer_client.py 작성 및 권한 부여 
+- timer_server.py
+- timer_client.py
+- 권한 부여
+```bash
+chmod +x ~/catkin_ws/src/beginner_tutorials/scripts/timer_server.py
+chmod +x ~/catkin_ws/src/beginner_tutorials/scripts/timer_client.py
+```
+
+## 실행
+```bash
+cd ~/catkin_ws && catkin_make
+source devel/setup.bash
+```
+- 서버 실행(터미널1)
+```bash
+rosrun beginner_tutorials timer_server.py
+```
+- 클라이언트 실행(터미널2)
+```bash
+rosrun beginner_tutorials timer_client.py
+```
+- 취소 테스트(터미널3)
+```bash
+rostopic pub /timer/cancel actionlib_msgs/GoalID "{}"
+```
 
 ## 오늘 배운 점
 ```bash
