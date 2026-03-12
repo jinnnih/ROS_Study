@@ -1,91 +1,85 @@
 #!/usr/bin/env python3
 import rospy
+import math
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
 # ===== 파라미터 =====
-DIST_THRESHOLD = 0.8   # 벽까지 이 거리 이내면 "가깝다"고 판단 (m)
-LINEAR_SPEED = 0.4    # 전진 속도 (m/s)
-ANGULAR_SPEED = 0.3    # 회전 속도 (rad/s)
+LINEAR_SPEED = 0.15
+ANGULAR_SPEED = 1.0  # 너무 빠르면 진동이 심해지니 1.0 정도로 조절해보세요
+DESIRED_DISTANCE = 0.5
 
-class WallFollower:
+class WallFollowerPID:
     def __init__(self):
-        rospy.init_node('wall_follower')
+        rospy.init_node('wall_follower_pid')
         self.pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
         self.sub = rospy.Subscriber('/scan', LaserScan, self.scan_callback)
-        self.regions = {}
-        self.state = 'find_wall'
+
+        # PID 게인 - 속도를 올렸다면 kd를 조금 더 높여야 안정적입니다.
+        self.kp = 0.7 
+        self.ki = 0.0
+        self.kd = 0.1  
+
+        self.integral = 0.0
+        self.prev_error = 0.0
+        self.dt = 0.1
         self.rate = rospy.Rate(10)
 
-    def scan_callback(self, scan):
-        # LaserScan 데이터를 5개 영역으로 분할
-        self.regions = {
-            'right':       min(min(scan.ranges[0:144]),   10),
-            'front_right': min(min(scan.ranges[144:288]), 10),
-            'front':       min(min(scan.ranges[288:432]), 10),
-            'front_left':  min(min(scan.ranges[432:576]), 10),
-            'left':        min(min(scan.ranges[576:720]), 10),
-        }
+    def get_range(self, scan, angle):
+        if 1.40 <= angle <= 1.75: # 구멍(문) 필터
+            return 10.0
+        index = int((angle - scan.angle_min) / scan.angle_increment)
+        index = max(0, min(index, len(scan.ranges) - 1))
+        distance = scan.ranges[index]
+        if math.isnan(distance) or math.isinf(distance) or distance == 0:
+            distance = 10.0
+        return distance
 
-    def decide_state(self):
-        r = self.regions
-        if not r:
-            return
+    def get_error(self, scan, desired_distance):
+        theta = math.radians(45)
+        a = self.get_range(scan, math.radians(45))
+        b = self.get_range(scan, math.radians(90))
 
-        d = DIST_THRESHOLD
+        if b >= 2.0 or a >= 10.0:
+            return self.prev_error 
 
-        # [기존 우측 벽 기준 판단 로직]
-        # if r['front'] > d and r['front_right'] > d and r['right'] > d:
-        #     self.state = 'find_wall'
-        # elif r['front'] < d:
-        #     self.state = 'turn_left'
-        # else:
-        #     self.state = 'follow_wall'
-
-        # [수정된 좌측 벽 기준 판단 로직]
-        if r['front'] > d and r['front_left'] > d and r['left'] > d:
-            self.state = 'find_wall'
-        elif r['front'] < d:
-            self.state = 'turn_right'  # 전방 장애물 발견 시 우회전
-        else:
-            self.state = 'follow_wall'
+        alpha = math.atan2(a * math.cos(theta) - b, a * math.sin(theta))
+        current_wall_dist = b * math.cos(alpha)
         
+        # [수정] 왼쪽 벽 기준: 벽이 가까워지면(dist < desired) 결과가 마이너스
+        # 마이너스 결과 -> 우회전(-)이 되도록 설정
+        return current_wall_dist - desired_distance
 
-    def act(self):
+    def pid_control(self, error):
+        p_term = self.kp * error
+        self.integral += error * self.dt
+        i_term = self.ki * self.integral
+        d_term = self.kd * (error - self.prev_error) / self.dt
+        
+        angular_z = p_term + i_term + d_term
+        self.prev_error = error
+
         twist = Twist()
-
-        if self.state == 'find_wall':
-            # 벽을 찾을 때까지 전진 + 약간 좌회전 (왼쪽 벽을 향함)
-            twist.linear.x = LINEAR_SPEED
-            twist.angular.z = ANGULAR_SPEED * 0.5  # 양수(+)는 좌회전
-            
-        elif self.state == 'turn_right':
-            # 전방에 벽이 감지되면 오른쪽으로 회전하여 회피
-            twist.angular.z = -ANGULAR_SPEED       # 음수(-)는 우회전
-            
-        elif self.state == 'follow_wall':
-            # 왼쪽에 벽이 있는 상태로 판단되면 직진
-            twist.linear.x = LINEAR_SPEED
-
+        twist.linear.x = LINEAR_SPEED
+        twist.angular.z = angular_z
         self.pub.publish(twist)
 
-    def run(self):
-        rospy.loginfo("Wall Follower 시작 (좌측 벽 추종 모드)")
-        while not rospy.is_shutdown():
-            self.decide_state()
-            self.act()
-            if self.regions:
-                # 디버깅 편의를 위해 로그 출력을 좌측 기준으로 변경했습니다.
-                rospy.loginfo("상태: %-12s | 좌측: %.2f | 좌전방: %.2f | 전방: %.2f",
-                              self.state,
-                              self.regions['left'],
-                              self.regions['front_left'],
-                              self.regions['front'])
-            self.rate.sleep()
+    def scan_callback(self, scan):
+        front = self.get_range(scan, 0.0)
+        error = self.get_error(scan, DESIRED_DISTANCE)
+
+        if front < 0.6: # 충돌 방지를 위해 범위를 0.6으로 약간 넓힘
+            twist = Twist()
+            # [수정] 왼쪽 벽을 따라가려면 정면 장애물 시 '우회전' 해야 함
+            twist.angular.z = -ANGULAR_SPEED 
+            self.pub.publish(twist)
+            rospy.loginfo("장애물 감지 - 우회전 회피")
+        else:
+            self.pid_control(error)
 
 if __name__ == '__main__':
     try:
-        wf = WallFollower()
-        wf.run()
+        wf = WallFollowerPID()
+        rospy.spin()
     except rospy.ROSInterruptException:
         pass
