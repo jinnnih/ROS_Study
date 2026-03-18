@@ -1,0 +1,277 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/open_manipulator_msgs/cmake/open_manipulator_msgs-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"open_manipulator_msgs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 522,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 539,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 543,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 621,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 535,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 545,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 531,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 541,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 533,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 529,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 537,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 624,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_SetJointPosition::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_SetDrawingTrajectory::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "std_msgs_generate_messages_py::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_GetJointPosition::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_SetActuatorState::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_KinematicsPose::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_SetKinematicsPose::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_OpenManipulatorState::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_JointPosition::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "_open_manipulator_msgs_generate_messages_check_deps_GetKinematicsPose::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "geometry_msgs_generate_messages_py::@6ee5bd5f8e50d8d4a918"
+		}
+	],
+	"id" : "open_manipulator_msgs_generate_messages_py::@6ee5bd5f8e50d8d4a918",
+	"name" : "open_manipulator_msgs_generate_messages_py",
+	"paths" : 
+	{
+		"build" : "open_manipulator_msgs",
+		"source" : "open_manipulator_msgs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/open_manipulator_msgs/CMakeFiles/open_manipulator_msgs_generate_messages_py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/msg/_JointPosition.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/msg/_KinematicsPose.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/msg/_OpenManipulatorState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/_GetJointPosition.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/_GetKinematicsPose.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/_SetJointPosition.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/_SetKinematicsPose.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/_SetDrawingTrajectory.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/_SetActuatorState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/msg/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/open_manipulator_msgs/srv/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

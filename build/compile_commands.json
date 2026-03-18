@@ -1,0 +1,157 @@
+[
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/gtest/googlemock",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/gtest/googletest",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/gtest/googletest",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_libs",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_libs\\\" -Dopen_manipulator_libs_EXPORTS -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -g -fPIC   -std=c++11 -o CMakeFiles/open_manipulator_libs.dir/src/open_manipulator.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/open_manipulator.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/open_manipulator.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_libs",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_libs\\\" -Dopen_manipulator_libs_EXPORTS -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -g -fPIC   -std=c++11 -o CMakeFiles/open_manipulator_libs.dir/src/custom_trajectory.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/custom_trajectory.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/custom_trajectory.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_libs",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_libs\\\" -Dopen_manipulator_libs_EXPORTS -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -g -fPIC   -std=c++11 -o CMakeFiles/open_manipulator_libs.dir/src/dynamixel.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/dynamixel.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/dynamixel.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_libs",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_libs\\\" -Dopen_manipulator_libs_EXPORTS -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -g -fPIC   -std=c++11 -o CMakeFiles/open_manipulator_libs.dir/src/kinematics.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/kinematics.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/src/kinematics.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_control_gui\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/include -I/home/zeenee/catkin_ws/src/build/devel/include/open_manipulator_control_gui -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -std=c++11 -fPIC -o CMakeFiles/open_manipulator_control_gui.dir/src/main.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/src/main.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/src/main.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_control_gui\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/include -I/home/zeenee/catkin_ws/src/build/devel/include/open_manipulator_control_gui -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -std=c++11 -fPIC -o CMakeFiles/open_manipulator_control_gui.dir/src/main_window.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/src/main_window.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/src/main_window.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_control_gui\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/include -I/home/zeenee/catkin_ws/src/build/devel/include/open_manipulator_control_gui -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -std=c++11 -fPIC -o CMakeFiles/open_manipulator_control_gui.dir/src/qnode.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/src/qnode.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/src/qnode.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_control_gui\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/include -I/home/zeenee/catkin_ws/src/build/devel/include/open_manipulator_control_gui -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -std=c++11 -fPIC -o CMakeFiles/open_manipulator_control_gui.dir/include/open_manipulator_control_gui/moc_main_window.cpp.o -c /home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui/include/open_manipulator_control_gui/moc_main_window.cpp",
+  "file": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui/include/open_manipulator_control_gui/moc_main_window.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_control_gui\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/include -I/home/zeenee/catkin_ws/src/build/devel/include/open_manipulator_control_gui -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -std=c++11 -fPIC -o CMakeFiles/open_manipulator_control_gui.dir/include/open_manipulator_control_gui/moc_qnode.cpp.o -c /home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui/include/open_manipulator_control_gui/moc_qnode.cpp",
+  "file": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui/include/open_manipulator_control_gui/moc_qnode.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_control_gui\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_control_gui/include -I/home/zeenee/catkin_ws/src/build/devel/include/open_manipulator_control_gui -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -std=c++11 -fPIC -o CMakeFiles/open_manipulator_control_gui.dir/qrc_images.cpp.o -c /home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui/qrc_images.cpp",
+  "file": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_control_gui/qrc_images.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_controller",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_controller\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_controller/include -I/home/zeenee/catkin_ws/src/build/devel/include -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_libs/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3  -g   -std=c++11 -o CMakeFiles/open_manipulator_controller.dir/src/open_manipulator_controller.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_controller/src/open_manipulator_controller.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_controller/src/open_manipulator_controller.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_teleop",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_teleop\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_teleop/include -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o CMakeFiles/open_manipulator_teleop_joystick.dir/src/open_manipulator_teleop_joystick.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/open_manipulator_teleop_joystick.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/open_manipulator_teleop_joystick.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator/open_manipulator_teleop",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_teleop\\\" -I/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_teleop/include -I/home/zeenee/catkin_ws/src/build/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o CMakeFiles/open_manipulator_teleop_keyboard.dir/src/open_manipulator_teleop_keyboard.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/open_manipulator_teleop_keyboard.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator/open_manipulator_teleop/src/open_manipulator_teleop_keyboard.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator_dependencies/roboticsgroup_gazebo_plugins",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_TEST_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"roboticsgroup_gazebo_plugins\\\" -Droboticsgroup_gazebo_disable_link_plugin_EXPORTS -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/sdformat-9.10 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/home/zeenee/catkin_ws/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/include -isystem /opt/ros/noetic/include -isystem /usr/include/simbody -isystem /usr/include/ignition/math6 -isystem /usr/include/ignition/transport8 -isystem /usr/include/ignition/msgs5 -isystem /usr/include/ignition/common3 -isystem /usr/include/ignition/fuel_tools4 -isystem /usr/include/eigen3 -isystem /usr/include/sdformat-9.10/sdf/.. -isystem /usr/include/ignition/cmake2 -isystem /usr/include/uuid    -g -fPIC   -I/usr/include/uuid -std=gnu++17 -o CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/src/disable_link_plugin.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/src/disable_link_plugin.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/src/disable_link_plugin.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator_dependencies/roboticsgroup_gazebo_plugins",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_TEST_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"roboticsgroup_gazebo_plugins\\\" -Droboticsgroup_gazebo_mimic_joint_plugin_EXPORTS -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/sdformat-9.10 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/home/zeenee/catkin_ws/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/include -isystem /opt/ros/noetic/include -isystem /usr/include/simbody -isystem /usr/include/ignition/math6 -isystem /usr/include/ignition/transport8 -isystem /usr/include/ignition/msgs5 -isystem /usr/include/ignition/common3 -isystem /usr/include/ignition/fuel_tools4 -isystem /usr/include/eigen3 -isystem /usr/include/sdformat-9.10/sdf/.. -isystem /usr/include/ignition/cmake2 -isystem /usr/include/uuid    -g -fPIC   -I/usr/include/uuid -std=gnu++17 -o CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/src/mimic_joint_plugin.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/src/mimic_joint_plugin.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator_dependencies/roboticsgroup_gazebo_plugins/src/mimic_joint_plugin.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/turtlebot3_simulations/turtlebot3_fake",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"turtlebot3_fake\\\" -I/home/zeenee/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake.cpp.o -c /home/zeenee/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/src/turtlebot3_fake.cpp",
+  "file": "/home/zeenee/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/src/turtlebot3_fake.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/turtlebot3_simulations/turtlebot3_gazebo",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_TEST_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"turtlebot3_gazebo\\\" -I/home/zeenee/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/sdformat-9.10 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -isystem /opt/ros/noetic/include -isystem /usr/include/simbody -isystem /usr/include/ignition/math6 -isystem /usr/include/ignition/transport8 -isystem /usr/include/ignition/msgs5 -isystem /usr/include/ignition/common3 -isystem /usr/include/ignition/fuel_tools4 -isystem /usr/include/eigen3 -isystem /usr/include/sdformat-9.10/sdf/.. -isystem /usr/include/ignition/cmake2 -isystem /usr/include/uuid  -g   -std=c++11 -I/usr/include/uuid -std=gnu++17 -o CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o -c /home/zeenee/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp",
+  "file": "/home/zeenee/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/open_manipulator_simulations/open_manipulator_gazebo",
+  "command": "/usr/bin/g++  -DBOOST_TEST_DYN_LINK -DLIBBULLET_VERSION=2.88 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"open_manipulator_gazebo\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/gazebo-11 -I/usr/include/bullet -I/usr/include/simbody -I/usr/include/sdformat-9.10 -I/usr/include/ignition/math6 -I/usr/include/OGRE -I/usr/include/OGRE/Terrain -I/usr/include/OGRE/Paging -I/usr/include/ignition/transport8 -I/usr/include/ignition/msgs5 -I/usr/include/ignition/common3 -I/usr/include/ignition/fuel_tools4  -g   -std=c++11 -o CMakeFiles/omx_gripper_sub_publisher.dir/src/omx_gripper_sub_publisher.cpp.o -c /home/zeenee/catkin_ws/src/open_manipulator_simulations/open_manipulator_gazebo/src/omx_gripper_sub_publisher.cpp",
+  "file": "/home/zeenee/catkin_ws/src/open_manipulator_simulations/open_manipulator_gazebo/src/omx_gripper_sub_publisher.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/pick_place_action.dir/src/pick_place_action.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/pick_place_action.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/pick_place_action.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/pick_place_reverse.dir/src/pick_place_reverse.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/pick_place_reverse.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/pick_place_reverse.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/remove_collision_objct.dir/src/remove_collision_objct.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/remove_collision_objct.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/remove_collision_objct.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/attach_detach_object.dir/src/attach_detach_object.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/attach_detach_object.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/attach_detach_object.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/test_random_node.dir/src/test_random.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/test_random.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/test_random.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/test_custom_node.dir/src/test_custom.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/test_custom.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/test_custom.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/add_collision_object.dir/src/add_collision_object.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/add_collision_object.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/add_collision_object.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/pick_place.dir/src/pick_place.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/pick_place.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/pick_place.cpp"
+},
+{
+  "directory": "/home/zeenee/catkin_ws/src/build/seven_dof_arm_test",
+  "command": "/usr/bin/g++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"seven_dof_arm_test\\\" -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/bullet  -std=c++0x  -g   -o CMakeFiles/check_collision.dir/src/check_collision.cpp.o -c /home/zeenee/catkin_ws/src/seven_dof_arm_test/src/check_collision.cpp",
+  "file": "/home/zeenee/catkin_ws/src/seven_dof_arm_test/src/check_collision.cpp"
+}
+]

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: temp_sim
+Description: Description of temp_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

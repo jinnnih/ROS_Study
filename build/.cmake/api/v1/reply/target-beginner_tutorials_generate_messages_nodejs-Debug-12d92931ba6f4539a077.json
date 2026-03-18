@@ -1,0 +1,280 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/beginner_tutorials/cmake/beginner_tutorials-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"beginner_tutorials/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 460,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 651,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 467,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 485,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 477,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 469,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 654,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 479,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 475,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 473,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 481,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 471,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 483,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "std_msgs_generate_messages_nodejs::@6ee5bd5f8e50d8d4a918"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_Num::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_StringLength::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerGoal::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerAction::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "actionlib_msgs_generate_messages_nodejs::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerResult::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerActionFeedback::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerActionResult::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerFeedback::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_TimerActionGoal::@5ba6eb0bb9606a309c37"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "_beginner_tutorials_generate_messages_check_deps_AddTwoInts::@5ba6eb0bb9606a309c37"
+		}
+	],
+	"id" : "beginner_tutorials_generate_messages_nodejs::@5ba6eb0bb9606a309c37",
+	"name" : "beginner_tutorials_generate_messages_nodejs",
+	"paths" : 
+	{
+		"build" : "beginner_tutorials",
+		"source" : "beginner_tutorials"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerAction.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerActionGoal.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerActionResult.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerActionFeedback.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerGoal.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerResult.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/msg/TimerFeedback.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/beginner_tutorials/srv/StringLength.js.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}
